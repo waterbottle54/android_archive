@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Picasou</string>
+    <string name="line">LINE</string>
+    <string name="rect">RECT</string>
+    <string name="circle">CIRCLE</string>
+    <string name="curve">CURVE</string>
+    <string name="blur">BLUR</string>
+    <string name="emboss">EMBOSS</string>
+    <string name="clear">CLEAR</string>
+    <string name="erase">ERASE</string>
+    <string name="weight">Weight</string>
+    <string name="color">Color</string>
+    <string name="pick_line_color">Pick Line Color</string>
+    <string name="pick_line_width">Pick Line Width</string>
+</resources>
