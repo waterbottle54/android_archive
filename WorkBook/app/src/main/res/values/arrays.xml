@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spellings_meanings">
+        <item>able_가능하다</item>
+        <item>bad_나쁜</item>
+        <item>best_최고의</item>
+        <item>better_나은</item>
+        <item>big_큰</item>
+        <item>black_검은</item>
+        <item>certain_어떤</item>
+        <item>clear_분명한</item>
+        <item>different_다른</item>
+        <item>early_이른</item>
+        <item>easy_쉬운</item>
+        <item>economic_경제적인</item>
+        <item>federal_연방의</item>
+        <item>free_자유의</item>
+        <item>full_가득찬</item>
+    </string-array>
+
+</resources>

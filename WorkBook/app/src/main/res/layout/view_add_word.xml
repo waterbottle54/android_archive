@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edit_spelling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="@string/spelling"
+        android:drawableStart="@drawable/ic_pen"
+        android:drawablePadding="8dp"
+        android:hint="@string/spelling"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/meaning"
+        android:drawableStart="@drawable/ic_meaning"
+        android:drawablePadding="8dp"
+        android:hint="@string/meaning"
+        android:inputType="text" />
+
+</LinearLayout>
