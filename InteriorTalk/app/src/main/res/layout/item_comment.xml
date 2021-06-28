@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_marginBottom="12dp">
+
+    <!-- 댓글 작성자 -->
+    <TextView
+        android:id="@+id/txt_comment_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp"
+        android:text="캐서린"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- 댓글 내용 -->
+    <TextView
+        android:id="@+id/txt_comment_text"
+        android:layout_below="@id/txt_comment_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인테리어가 너무 예쁘네요. 부러워요 !!"
+        tools:ignore="HardcodedText" />
+
+    <!-- 댓글 작성시간 -->
+    <TextView
+        android:id="@+id/txt_comment_time"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021-03-21 01:01:30"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

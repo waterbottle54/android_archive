@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182184947711",
+    "project_id": "interiortalk-f7e1e",
+    "storage_bucket": "interiortalk-f7e1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182184947711:android:876f49fe1e88ddb8f441ca",
+        "android_client_info": {
+          "package_name": "com.holy.interiortalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182184947711-gl9v5t78hkjjici8tsrf2c7ebrv8dquf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDHkBIYJ-0Lsnburb8EukqSsU_jHRfhtU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182184947711-gl9v5t78hkjjici8tsrf2c7ebrv8dquf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

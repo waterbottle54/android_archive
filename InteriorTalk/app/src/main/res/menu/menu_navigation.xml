@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/category">
+
+        <menu>
+
+            <item
+                android:id="@+id/item_living_room"
+                android:title="@string/living_room" />
+
+            <item
+                android:id="@+id/item_bedroom"
+                android:title="@string/bedroom" />
+
+            <item
+                android:id="@+id/item_kitchen"
+                android:title="@string/kitchen" />
+
+            <item
+                android:id="@+id/item_bathroom"
+                android:title="@string/bathroom" />
+
+            <item
+                android:id="@+id/item_ranking"
+                android:title="@string/ranking" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="@string/my">
+
+        <menu>
+
+            <item
+                android:id="@+id/item_my_post"
+                android:title="@string/my_post" />
+
+            <item
+                android:id="@+id/item_logout"
+                android:title="@string/logout" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="@string/service">
+
+        <menu>
+
+            <item
+                android:id="@+id/item_qna"
+                android:title="@string/qna" />
+
+        </menu>
+
+    </item>
+
+</menu>

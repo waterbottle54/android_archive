@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/login" />
+
+    <!-- 본 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nanum_pen_script"
+                android:text="@string/login"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btn_login_member"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/member_login" />
+
+            <Button
+                android:id="@+id/btn_login_google"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:text="@string/google" />
+
+            <Button
+                android:id="@+id/btn_login_facebook"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#3C5898"
+                android:text="@string/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nanum_pen_script"
+                android:text="@string/register"
+                android:textSize="40sp" />
+
+            <EditText
+                android:focusable="false"
+                android:id="@+id/edit_register_email"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints=""
+                android:background="#8B7"
+                android:elevation="2dp"
+                android:hint="@string/please_enter_new_id"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="#FFF"
+                android:textSize="14sp" />
+
+            <EditText
+                android:focusable="false"
+                android:id="@+id/edit_register_password"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="4dp"
+                android:autofillHints=""
+                android:background="#8B7"
+                android:elevation="2dp"
+                android:hint="@string/please_enter_password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="#FFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/do_register" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- 표지 레이아웃 : 앱 실행시 잠깐 보입니다 -->
+    <include
+        android:id="@+id/cover"
+        layout="@layout/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nanum_pen_script"
+        android:text="@string/do_question"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/edit_question"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:autofillHints=""
+        android:background="#8B7"
+        android:elevation="2dp"
+        android:gravity="top"
+        android:hint="@string/do_question"
+        android:inputType="text"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:textColorHint="#FFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

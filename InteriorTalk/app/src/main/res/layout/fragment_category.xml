@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".CategoryFragment">
+
+    <!-- 배경 이미지 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 카테고리 1 -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:columnCount="2">
+
+            <!-- 1. 거실 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_living_room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="8dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    <TextView
+                        android:id="@+id/txt_living_room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/living_room"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/living_room"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_chair" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 거실 -->
+
+            <!-- 2. 침실 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_bedroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="10dp"
+                android:elevation="8dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_bedroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bedroom"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/bedroom"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_bed" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 침실 -->
+
+            <!-- 3. 주방 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_kitchen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="10dp"
+                android:elevation="8dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_kitchen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kitchen"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/kitchen"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_kitchen" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 주방 -->
+
+            <!-- 4. 욕실 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_bathroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:elevation="8dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_bathroom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bathroom"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/bathroom"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_bath" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 욕실 -->
+
+        </GridLayout>
+        <!-- 끝 : 카테고리 1 -->
+
+        <!-- 카테고리 2 : 랭킹 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ranking"
+                    android:drawablePadding="6dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap"
+                    app:drawableStartCompat="@drawable/ic_thumb" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/ranking"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_ranking" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!-- 끝 : 카테고리 2 -->
+
+    </LinearLayout>
+
+</FrameLayout>

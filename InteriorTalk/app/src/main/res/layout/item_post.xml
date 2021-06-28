@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="#7000"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- 포스트 사진 -->
+        <ImageView
+            android:id="@+id/img_post"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/post_interior_picture"
+            android:scaleType="centerCrop" />
+
+        <!-- 포스트 제목 -->
+        <TextView
+            android:id="@+id/txt_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toStartOf="@id/txt_post_writer"
+            android:layout_toEndOf="@id/img_post"
+            android:text="제 인테리어 어때요?"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <!-- 포스트 작성자 -->
+        <TextView
+            android:id="@+id/txt_post_writer"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="초보아티스트"
+            android:textColor="#AAA"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- 포스트 내용 -->
+        <TextView
+            android:id="@+id/txt_post_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_post_title"
+            android:layout_alignStart="@id/txt_post_title"
+            android:layout_toEndOf="@id/img_post"
+            android:text="제 인테리어 어때요?"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- 좋아요 수 -->
+        <TextView
+            android:id="@+id/txt_post_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/img_post"
+            android:text="+ 3"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#334"
+    tools:context=".PictureFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="@string/please_select_picture"
+        android:textColor="#CCC" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 기본 배경 이미지 -->
+        <ImageView
+            android:id="@+id/img_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:background="@drawable/records"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <!-- 선택된 이미지 -->
+        <ImageView
+            android:id="@+id/img_selected_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/selected_picture"
+            android:scaleType="fitCenter" />
+
+        <!-- 사진 선택 버튼 -->
+        <Button
+            android:id="@+id/btn_select_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#335"
+            android:textColor="#CCC"
+            android:text="@string/upload_picture" />
+
+    </FrameLayout>
+
+</LinearLayout>
+
