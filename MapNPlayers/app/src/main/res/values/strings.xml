@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MapNPlayers</string>
+    <string name="picture">사진</string>
+    <string name="student_number">202012345</string>
+    <string name="student_name">홍길동</string>
+    <string name="home">홈</string>
+    <string name="audio_player">오디오플레이어</string>
+    <string name="video_player">비디오플레이어</string>
+    <string name="current_map">지도 현재 위치</string>
+
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="next">Next</string>
+
+    <string name="somewhere_in_my_memory">Somewhere in My Memory</string>
+    <string name="fur_elise">엘리제를 위하여</string>
+    <string name="korean_anthem">애국가</string>
+
+    <string name="video_on_air">비디오 재생 중</string>
+    <string name="the_seed">씨앗</string>
+    <string name="mandy_and_major">맨디와 메이저</string>
+    <string name="how_to_fix_an_iphone">아이폰 고치는 방법</string>
+
+</resources>
