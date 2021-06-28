@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/edit_work_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="@string/work_title"
+        android:drawableStart="@drawable/ic_work"
+        android:drawablePadding="8dp"
+        android:hint="@string/work_title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_work_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="@string/work_hours"
+        android:drawableStart="@drawable/ic_hours"
+        android:drawablePadding="8dp"
+        android:hint="@string/work_hours"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_hourly_wage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="@string/hourly_wage"
+        android:drawableStart="@drawable/ic_hourly_wage"
+        android:drawablePadding="8dp"
+        android:hint="@string/hourly_wage"
+        android:inputType="number" />
+
+</LinearLayout>
