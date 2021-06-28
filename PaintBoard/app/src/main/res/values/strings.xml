@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PaintBoard</string>
+    <string name="color">Color</string>
+    <string name="pen">Pen</string>
+    <string name="eraser">Eraser</string>
+    <string name="undo">Undo</string>
+    <string name="close">Close</string>
+</resources>

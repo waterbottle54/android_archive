@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 페인트 보드 -->
+    <com.good.paintboard.BestPaintBoard
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <!-- 버튼 레이아웃 시작 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_color"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableTop="@drawable/colorpalette"
+            android:padding="8dp"
+            android:text="@string/color"
+            android:textColor="#333"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_pen"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableTop="@drawable/penpalette"
+            android:padding="8dp"
+            android:text="@string/pen"
+            android:textColor="#333"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_eraser"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableTop="@drawable/eraser"
+            android:padding="8dp"
+            android:text="@string/eraser"
+            android:textColor="#333"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_undo"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:drawableTop="@drawable/undo"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/undo"
+            android:textColor="#333"
+            tools:ignore="ButtonStyle" />
+
+        <!-- 현재 색상 및 굵기 표시 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_current_color"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/txt_current_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 버튼 레이아웃 끝 -->
+
+</FrameLayout>
