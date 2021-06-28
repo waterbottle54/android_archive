@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_box"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtNuclearPlantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고리원자력발전소"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtNuclearPlantAddress"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNuclearPlantName"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="부산광역시 기장군 ..."
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/layoutNuclearPlantValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNuclearPlantValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="36"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="@string/unit_radioactivity"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNuclearPlantLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutNuclearPlantValue"
+        android:layout_alignParentEnd="true"
+        android:text="안전"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageNuclearPlantLevel"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignBottom="@id/txtNuclearPlantLevel"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toStartOf="@id/txtNuclearPlantLevel"
+        android:contentDescription="@string/risk_level"
+        android:src="@drawable/ic_circle" />
+
+</RelativeLayout>

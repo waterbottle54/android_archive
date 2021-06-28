@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <!-- SafeLongTerm -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp">
+
+        <ImageView
+            android:id="@+id/imageSafeLongTerm"
+            app:tint="@color/colorSafeLongTerm"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/safe_long_term"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtSafeLongTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageSafeLongTerm"
+            android:text="@string/safe_long_term" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSafeLongTerm"
+            android:text="@string/criteria_safe_long_term"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtSafeLongTerm"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_safe_long_term" />
+
+    </RelativeLayout>
+
+    <!-- SafeMediumTerm -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageSafeMediumTerm"
+            app:tint="@color/colorSafeMediumTerm"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/safe_medium_term"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtSafeMediumTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageSafeMediumTerm"
+            android:text="@string/safe_medium_term" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSafeMediumTerm"
+            android:text="@string/criteria_safe_medium_term"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtSafeMediumTerm"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_safe_medium_term" />
+
+    </RelativeLayout>
+
+    <!-- SafeShortTerm -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageSafeShortTerm"
+            app:tint="@color/colorSafeShortTerm"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/safe_short_term"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtSafeShortTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageSafeShortTerm"
+            android:text="@string/safe_short_term" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSafeShortTerm"
+            android:text="@string/criteria_safe_short_term"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtSafeShortTerm"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_safe_short_term" />
+
+    </RelativeLayout>
+
+    <!-- Risky -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageRisky"
+            app:tint="@color/colorRisky"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/risky"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtRisky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageRisky"
+            android:text="@string/risky" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageRisky"
+            android:text="@string/criteria_risky"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtRisky"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_risky" />
+
+    </RelativeLayout>
+
+    <!-- Danger -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageDanger"
+            app:tint="@color/colorDanger"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/danger"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtDanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageDanger"
+            android:text="@string/danger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageDanger"
+            android:text="@string/criteria_danger"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtDanger"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_danger" />
+
+    </RelativeLayout>
+
+    <!-- HighDanger -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageHighDanger"
+            app:tint="@color/colorHighDanger"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/high_danger"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtHighDanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageHighDanger"
+            android:text="@string/high_danger" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageHighDanger"
+            android:text="@string/criteria_high_danger"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtHighDanger"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_high_danger" />
+
+    </RelativeLayout>
+
+    <!-- Severe -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageSevere"
+            app:tint="@color/colorSevere"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/severe"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtSevere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageSevere"
+            android:text="@string/severe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSevere"
+            android:text="@string/criteria_severe"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtSevere"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_severe" />
+
+    </RelativeLayout>
+
+    <!-- VerySevere -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imageVerySevere"
+            app:tint="@color/colorVerySevere"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/very_severe"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtVerySevere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageVerySevere"
+            android:text="@string/very_severe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageVerySevere"
+            android:text="@string/criteria_very_severe"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtVerySevere"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_very_severe" />
+
+    </RelativeLayout>
+
+    <!-- Fatal -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageFatal"
+            app:tint="@color/colorFatal"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/fatal"
+            android:src="@drawable/ic_circle" />
+
+        <TextView
+            android:id="@+id/txtFatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageFatal"
+            android:text="@string/fatal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageFatal"
+            android:text="@string/criteria_fatal"
+            android:textSize="12sp" />
+
+        <TextView
+            tools:ignore="RelativeOverlap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/txtFatal"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:text="@string/desc_fatal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

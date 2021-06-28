@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="nuclear_plant_list">
+        <item>@array/KR</item>
+        <item>@array/WS</item>
+        <item>@array/YK</item>
+        <item>@array/UJ</item>
+        <item>@array/SU</item>
+    </array>
+
+    <string-array name="KR">
+        <item>KR</item>
+        <item>고리원자력발전소</item>
+        <item>35.319917</item>
+        <item>129.290056</item>
+        <item>부산광역시 기장군 장안읍 고리 및 효암리, 울산광역시 울주군 서생면 신암리</item>
+    </string-array>
+
+    <string-array name="WS">
+        <item>WS</item>
+        <item>월성원자력발전소</item>
+        <item>35.711111</item>
+        <item>129.475</item>
+        <item>경상북도 경주시 양남면 나아리 및 문무대왕면 봉길리</item>
+    </string-array>
+
+    <string-array name="YK">
+        <item>YK</item>
+        <item>한빛원자력발전소</item>
+        <item>35.415</item>
+        <item>126.423889</item>
+        <item>대한민국 전라남도 영광군 홍농읍 계마리 974</item>
+    </string-array>
+
+    <string-array name="UJ">
+        <item>UJ</item>
+        <item>한울원자력발전소</item>
+        <item>37.092778</item>
+        <item>129.383611</item>
+        <item>경상북도 울진군 북면 부구리</item>
+    </string-array>
+
+    <string-array name="SU">
+        <item>SU</item>
+        <item>새울원자력발전소</item>
+        <item>35.3350185</item>
+        <item>129.311612</item>
+        <item>울산광역시 울주군 서생면 해맞이로 658–91</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">원전 모니터링</string>
+    <string name="title">전국 원전 방사능 현황</string>
+    <string name="admob_app_id">ca-app-pub-2518940675755459~8636605869</string>
+    <string name="admob_banner_id">ca-app-pub-2518940675755459/4217126506</string>
+
+    <string name="safe_long_term">매우 안전</string>
+    <string name="safe_medium_term">안전</string>
+    <string name="safe_short_term">우려됨</string>
+    <string name="risky">안전하지 않음</string>
+    <string name="danger">위험</string>
+    <string name="high_danger">높은 위험</string>
+    <string name="severe">심각한 위험</string>
+    <string name="very_severe">극도의 위험</string>
+    <string name="fatal">치명적</string>
+    <string name="radioactivity_status">전국 발전소 방사능 현황</string>
+    <string name="risk_level">위험 레벨</string>
+    <string name="refresh">새로고침</string>
+    <string name="desciption_risk_level">위험 레벨 설명</string>
+    <string name="unit_radioactivity">μSv/h</string>
+    <string name="latest_update">최종 업데이트</string>
+    <string name="open_api_name">한국수력원자력(주)</string>
+    <string name="open_api_url">https://www.data.go.kr/data/15001091/openapi.do</string>
+    <string name="play_store_url">https://play.google.com/store/apps/details?id=com.holy.radiorate</string>
+
+    <string name="desc_safe_long_term">
+        장기적인 거주에 문제없음
+    </string>
+    <string name="desc_safe_medium_term">
+        중장기적인 거주가 가능함
+    </string>
+    <string name="desc_safe_short_term">
+        단기적인 거주가 가능함
+    </string>
+    <string name="desc_risky">
+        다른 장소로의 이동이 권장됨
+    </string>
+    <string name="desc_danger">
+        즉시 다른 장소로 이동해야 함
+    </string>
+    <string name="desc_high_danger">
+        모든 인원이 즉시 대피해야 함
+    </string>
+    <string name="desc_severe">
+        방사능 중독을 유발함
+    </string>
+    <string name="desc_very_severe">
+         1/20의 확률로 암이 발생함
+    </string>
+    <string name="desc_fatal">
+        수 시간 내 사망함
+    </string>
+
+    <string name="criteria_safe_long_term">
+        0.20μSv/h 미만
+    </string>
+    <string name="criteria_safe_medium_term">
+        0.50μSv/h 미만
+    </string>
+    <string name="criteria_safe_short_term">
+        1.0μSv/h 미만
+    </string>
+    <string name="criteria_risky">
+        5.0μSv/h 미만
+    </string>
+    <string name="criteria_danger">
+        10μSv/h 미만
+    </string>
+    <string name="criteria_high_danger">
+        1,000μSv/h 미만
+    </string>
+    <string name="criteria_severe">
+        100,000μSv/h 미만
+    </string>
+    <string name="criteria_very_severe">
+        1,000,000μSv/h 미만
+    </string>
+    <string name="criteria_fatal">
+        1,000,000μSv/h 이상
+    </string>
+    <string name="close_risk_info">위험정보 닫기</string>
+    <string name="risk_info">방사능 위험도 정보</string>
+    <string name="data_provided_by">Data provided by</string>
+    <string name="data_source">데이터 출처</string>
+    <string name="inquiry">문의하기</string>
+
+</resources>
