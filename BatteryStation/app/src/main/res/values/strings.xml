@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">전기자동차 충전소</string>
+    <string name="current_location_is">현재위치 :</string>
+    <string name="voice_search">음성 검색</string>
+    <string name="goal_is">목적지 :</string>
+    <string name="please_speak">검색할 키워드를 말씀해주세요</string>
+    <string name="select_the_destination">목적지를 선택하세요</string>
+    <string name="goal">목적지</string>
+    <string name="touch_or_voice_recognition">터치하거나 음성인식 버튼을 클릭</string>
+    <string name="do_voice_recognition">음성인식하기</string>
+    <string name="seach">검색</string>
+    <string name="stop_searching">검색 중단</string>
+</resources>

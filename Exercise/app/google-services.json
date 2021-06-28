@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256391364585",
+    "project_id": "exercise-d4c07",
+    "storage_bucket": "exercise-d4c07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256391364585:android:b4e31c78e9e39d82b39578",
+        "android_client_info": {
+          "package_name": "com.holy.exercise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256391364585-04939hk0bvu1vor19s58k7nij3v9nkft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHCv-1I5Bhu_zOK6kFODqhrvQJ2ikWktI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256391364585-04939hk0bvu1vor19s58k7nij3v9nkft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
