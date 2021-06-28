@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 표지 이미지 -->
+    <ImageView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- 표지 타이틀 -->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/nanum_pen_script"
+        android:text="@string/app_name"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <!-- 표지 서브타이틀 -->
+    <TextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_title"
+        android:layout_alignEnd="@id/txt_title"
+        android:text="@string/subtitle"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

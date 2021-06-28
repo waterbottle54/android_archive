@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 본 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 배경 이미지 -->
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/classroom" />
+
+        <!-- 게임 시작 전에 보이는 레이아웃 : 시작 버튼 포함 -->
+        <LinearLayout
+            android:id="@+id/layout_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_start_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"
+                android:fontFamily="@font/nanum_pen_script"
+                android:text="@string/start_title"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCC"
+                android:fontFamily="@font/nanum_pen_script"
+                android:text="@string/start"
+                android:textColor="#333"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <!-- 게임 진행 중일 때 보이는 레이아웃 : 안내문구 / 카운트다운 -->
+        <LinearLayout
+            android:id="@+id/layout_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/nanum_pen_script"
+                android:text="@string/in_three_seconds"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- 선택 레이아웃 (가위/바위/보 이미지 선택지 포함) -->
+        <LinearLayout
+            android:id="@+id/layout_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_rock"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/rock"
+                android:src="@drawable/rock" />
+
+            <ImageView
+                android:id="@+id/img_paper"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/paper"
+                android:src="@drawable/paper" />
+
+            <ImageView
+                android:id="@+id/img_scissor"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/scissors"
+                android:src="@drawable/scissors" />
+
+        </LinearLayout>
+
+
+        <!-- 나의 손 -->
+        <ImageView
+            android:id="@+id/img_hand_me"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:rotation="90"
+            android:scaleX="-1"
+            android:src="@drawable/rock"
+            android:visibility="gone" />
+
+        <!-- 상대의 손 -->
+        <ImageView
+            android:id="@+id/img_hand_enemy"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:rotation="-90"
+            android:src="@drawable/scissors"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <!-- 표지 레이아웃 : 앱 실행시 잠깐 보입니다 -->
+    <include
+        android:id="@+id/cover"
+        layout="@layout/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>
