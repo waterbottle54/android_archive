@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The order is based on assets/cityinfo.json file -->
+    <array name="city_logos">
+        <item>@drawable/ic_seoul</item>
+        <item>@drawable/ic_incheon</item>
+        <item>@drawable/ic_daejeon</item>
+        <item>@drawable/ic_sejong</item>
+        <item>@drawable/ic_busan</item>
+        <item>@drawable/ic_ulsan</item>
+        <item>@drawable/ic_daegu</item>
+        <item>@drawable/ic_gwangju</item>
+        <item>@drawable/ic_jeju</item>
+    </array>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/ar_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- UI Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/uiInset">
+
+        <!-- Bottom UI Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:baselineAligned="false">
+
+            <!-- Left Panel (with weight of 2 / 3) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/panelMargin"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- City Description Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="@dimen/cardRadius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/cardWidePadding"
+                        android:paddingTop="@dimen/cardNarrowPadding"
+                        android:paddingRight="@dimen/cardWidePadding"
+                        android:paddingBottom="@dimen/cardNarrowPadding">
+
+                        <TextView
+                            android:id="@+id/text_city_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textMargin"
+                            android:textStyle="bold"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/text_city_desc_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textMargin" />
+
+                        <TextView
+                            android:id="@+id/text_city_desc_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/textMargin" />
+
+                        <TextView
+                            android:id="@+id/text_distance_and_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!-- End of City Description Card -->
+
+            </LinearLayout>
+            <!-- End of Left Panel -->
+
+            <!-- Right Panel (with weight of 1 / 3) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Direction Card -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/panelMargin"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="@dimen/cardRadius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/cardNarrowPadding"
+                        android:paddingTop="@dimen/cardNarrowPadding"
+                        android:paddingRight="@dimen/cardNarrowPadding"
+                        android:paddingBottom="@dimen/cardNarrowPadding">
+
+                        <TextView
+                            android:id="@+id/text_direction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!-- End of Direction Card -->
+
+                <!-- Map -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@android:color/white"
+                    app:cardCornerRadius="@dimen/cardRadius">
+
+                    <!-- Naver Map -->
+                    <fragment
+                        android:id="@+id/map_fragment"
+                        android:name="com.naver.maps.map.MapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <!-- End of Right Panel -->
+
+        </LinearLayout>
+        <!-- End of Bottom UI Layout -->
+
+    </RelativeLayout>
+    <!-- End of UI Layout -->
+
+</FrameLayout>
