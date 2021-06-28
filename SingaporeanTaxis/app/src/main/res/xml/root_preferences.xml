@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Map">
+
+        <SeekBarPreference
+            app:key="range"
+            app:min="100"
+            android:max="1500"
+            app:showSeekBarValue="true"
+            app:title="Range of taxis to be shown (m)" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
