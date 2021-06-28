@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FoodScanner</string>
+    <string name="product_name">제품명</string>
+    <string name="product_type">식품유형</string>
+    <string name="manufacturer">제조원</string>
+    <string name="shelf_life_period">유통기간</string>
+    <string name="from_date_of_production">제조일로부터</string>
+    <string name="months">개월</string>
+    <string name="scan">스캔</string>
+    <string name="product_information">식품정보</string>
+    <string name="product_picture">식품 사진</string>
+</resources>
