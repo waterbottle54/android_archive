@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">메모장</string>
+    <string name="action_settings">설정</string>
+    <string name="activity_title_home">메모장</string>
+    <string name="msg_no_memos">메모가 없습니다</string>
+    <string name="hint_enter_memo_title">제목</string>
+    <string name="hint_enter_memo">메모를 입력해주세요!</string>
+
+    <string name="new_memo">새로운 메모</string>
+    <string name="edit_memo">메모 편집하기</string>
+</resources>

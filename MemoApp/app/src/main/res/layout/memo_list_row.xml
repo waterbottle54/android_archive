@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingTop="@dimen/dimen_10"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingBottom="@dimen/dimen_10">
+
+    <ImageView
+        android:id="@+id/image_memo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="@dimen/dot_margin_right"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_note"
+        />
+
+    <TextView
+        android:id="@+id/memo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_memo"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/memo_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/memo_title"
+        android:layout_toEndOf="@id/image_memo"
+        android:textColor="@color/note_list_text"
+        android:textSize="@dimen/note_list_text" />
+
+</RelativeLayout>
