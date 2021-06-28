@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GraphView">
+        <attr name="colorBackground" format="color"/>
+        <attr name="colorLower" format="color"/>
+        <attr name="colorUpper" format="color"/>
+        <attr name="colorCurve" format="color"/>
+        <attr name="zRange" format="float"/>
+        <attr name="zValue" format="float"/>
+    </declare-styleable>
+</resources>

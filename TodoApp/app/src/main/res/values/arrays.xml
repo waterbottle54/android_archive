@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_maxim">
+       <item>
+            시간과 정성을 들이지 않고 얻을수 있는 결실은 없다 - 그라시안
+        </item>
+        <item>
+            오늘이라는 날은 두번 다시 오지 않는다는 것을 잊지 말라 - 단테
+        </item>
+        <item>
+            시간을 선택하는 것은 시간을 절약하는 것이다. - 베이컨
+        </item>
+        <item>
+            계획이란 미래에 관한 현재의 결정이다. - 드래커
+        </item>
+        <item>
+            시간은 진리의 아버지다 - 타블레
+        </item>
+    </string-array>
+
+</resources>
