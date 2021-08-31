@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340325267493",
+    "project_id": "green-world-26214",
+    "storage_bucket": "green-world-26214.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340325267493:android:3b9c5cbbcca04a14e927cc",
+        "android_client_info": {
+          "package_name": "com.davidjo.greenworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340325267493-o1q551b2frpmloehodibo7fr1qfhup6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdIGOBngSJ59GoLcZaqrLI-rHn69rN9aI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340325267493-o1q551b2frpmloehodibo7fr1qfhup6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">GreenWorld</string>
+    <string name="user_id">아이디</string>
+    <string name="sign_in">로그인</string>
+    <string name="password">비밀번호</string>
+    <string name="sign_up">회원가입</string>
+    <string name="password_confirm">비밀번호 확인</string>
+    <string name="record_action">기록</string>
+    <string name="see_action">조회</string>
+    <string name="calendar">달력</string>
+    <string name="statistic">통계</string>
+    <string name="trend">현황</string>
+    <string name="new_category">새로운 카테고리</string>
+    <string name="add_action_record">활동 기록 추가하기</string>
+    <string name="category_name">카테고리 이름</string>
+    <string name="category_image">카테고리 이미지</string>
+    <string name="times">회</string>
+    <string name="please_specify_action_name">이름을 정해주세요</string>
+    <string name="search_word">Search Word</string>
+    <string name="searched_photo">검색된 사진</string>
+    <string name="no_search_result">검색 결과가 없습니다</string>
+    <string name="search_results_count">검색 결과 %d개</string>
+    <string name="repetitions_format">%d번</string>
+    <string name="score_format">%d점</string>
+    <string name="date_format">%d/%02d/%02d</string>
+    <string name="daily_score">일간 점수</string>
+    <string name="do_record">기록하기</string>
+    <string name="no_records">기록이 없습니다</string>
+    <string name="monthly_score_format">%d점이에요!</string>
+    <string name="monthly_score">이번 달 점수</string>
+    <string name="score_image">점수 이미지</string>
+
+    <string name="monday">월</string>
+    <string name="tuesday">화</string>
+    <string name="wednesday">수</string>
+    <string name="thursday">목</string>
+    <string name="friday">금</string>
+    <string name="saturday">토</string>
+    <string name="sunday">일</string>
+    <string name="menu">메뉴</string>
+    <string name="privacy_policy">개인정보처리방침</string>
+
+    <string name="privacy_policy_contents">
+        \n
+        <b>1. 개인정보의 처리 목적</b>\n
+        <small>본 어플리케이션에서 개인정보는 회원의 활동 정보를 데이터베이스에 기록하고 조회하기 위하여 처리됩니다.</small>\n\n
+        <b>2. 개인정보의 처리 및 보유 기간</b>\n
+        <small>본 어플리케이션에서 개인정보의 처리(및 보안 정책)는 Google 사와 Google Firebase 플랫폼에 위임되어 있으며 모든 개인정보는 서비스가 종료될 때까지 유지됩니다.</small>\n\n
+        <b>3. 개인정보의 제3자 제공에 관한 사항</b>\n
+        <small>본 어플리케이션에서 처리하는 개인정보는 회원 본인만 열람 가능하며 제 3자에게 제공되지 않습니다.</small>\n\n
+    </string>
+
+</resources>

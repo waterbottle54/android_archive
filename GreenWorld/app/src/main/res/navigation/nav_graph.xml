@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.davidjo.greenworld.ui.authentication.signin.SignInFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.davidjo.greenworld.ui.authentication.signup.SignUpFragment"
+        android:label="@string/sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:popUpTo="@id/signInFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.davidjo.greenworld.ui.home.HomeFragment"
+        android:label="홈"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment3"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_todayFragment"
+            app:destination="@id/todayFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_statisticFragment"
+            app:destination="@id/statisticFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trendFragment"
+            app:destination="@id/trendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.davidjo.greenworld.ui.add.category.CategoryFragment"
+        android:label="카테고리"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_addFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.davidjo.greenworld.ui.add.add.AddFragment"
+        android:label="기록 추가"
+        tools:layout="@layout/fragment_add" >
+        <argument
+            android:name="category"
+            app:argType="com.davidjo.greenworld.data.category.Category"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_addFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.davidjo.greenworld.ui.today.TodayFragment"
+        android:label="활동 기록"
+        tools:layout="@layout/fragment_today" >
+        <argument
+            android:name="epoch_days"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.davidjo.greenworld.ui.calendar.CalendarFragment"
+        android:label="달력"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_calendarFragment_to_todayFragment"
+            app:destination="@id/todayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.davidjo.greenworld.ui.statistic.StatisticFragment"
+        android:label="통계"
+        tools:layout="@layout/fragment_statistic" />
+    <fragment
+        android:id="@+id/trendFragment"
+        android:name="com.davidjo.greenworld.ui.trend.TrendFragment"
+        android:label="현황"
+        tools:layout="@layout/fragment_trend" />
+    <dialog
+        android:id="@+id/photoFragment"
+        android:name="com.davidjo.greenworld.ui.add.photo.PhotoFragment"
+        android:label="사진"
+        tools:layout="@layout/fragment_photo" />
+</navigation>

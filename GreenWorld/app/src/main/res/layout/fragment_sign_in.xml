@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background"
+    tools:context=".ui.authentication.signin.SignInFragment"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="@font/arita4_b"
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sign_in"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/edit_background"
+        android:id="@+id/edit_text_user_id"
+        android:layout_width="0dp"
+        android:fontFamily="@font/arita4_b"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#EEE"
+        android:hint="@string/user_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:background="@drawable/edit_background"
+        android:id="@+id/edit_text_password"
+        android:layout_width="0dp"
+        android:fontFamily="@font/arita4_b"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/password"
+        android:textColor="@color/white"
+        android:textColorHint="#EEE"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_user_id" />
+
+    <Button
+        android:backgroundTint="@color/platinum"
+        android:textColor="@color/spanish_gray"
+        android:id="@+id/button_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sign_in"
+        android:fontFamily="@font/arita4_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password" />
+
+    <TextView
+        android:fontFamily="@font/arita4_m"
+        android:id="@+id/text_view_sign_up"
+        android:textColor="@color/platinum"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="아이디가 없으신가요?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_in" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
