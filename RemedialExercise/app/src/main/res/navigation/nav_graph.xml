@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.davidjo.remedialexercise.ui.home.HomeFragment"
+        android:label="홈"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_introFragment_to_symptomsFragment"
+            app:destination="@id/diagnosisFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_promptBodyPartFragment"
+            app:destination="@id/promptBodyPartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_trainingFragment"
+            app:destination="@id/trainingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_statisticFragment"
+            app:destination="@id/statisticFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diagnosisFragment"
+        android:name="com.davidjo.remedialexercise.ui.diagnosis.home.DiagnosisFragment"
+        android:label="자가진단하기"
+        tools:layout="@layout/fragment_diagnosis">
+        <action
+            android:id="@+id/action_diagnosisFragment_to_diagnosisFailureFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/diagnosisFailureFragment" />
+        <action
+            android:id="@+id/action_diagnosisFragment_to_diagnosisSuccessFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/diagnosisSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hospitalsFragment"
+        android:name="com.davidjo.remedialexercise.ui.diagnosis.hospital.HospitalsFragment"
+        android:label="근처 병원"
+        tools:layout="@layout/fragment_hospitals" />
+    <fragment
+        android:id="@+id/diagnosisFailureFragment"
+        android:name="com.davidjo.remedialexercise.ui.diagnosis.failure.DiagnosisFailureFragment"
+        android:label="진단 실패"
+        tools:layout="@layout/fragment_diagnosis_failure">
+        <action
+            android:id="@+id/action_diagnosisFailureFragment_to_hospitalsFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/hospitalsFragment" />
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/diagnosisSuccessFragment"
+        android:name="com.davidjo.remedialexercise.ui.diagnosis.success.DiagnosisSuccessFragment"
+        android:label="진단 성공"
+        tools:layout="@layout/fragment_diagnosis_success" >
+        <argument
+            android:name="body_part"
+            app:argType="com.davidjo.remedialexercise.data.BodyPart" />
+        <action
+            android:id="@+id/action_diagnosisSuccessFragment_to_initiateFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/initiateFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/videoFragment"
+        android:name="com.davidjo.remedialexercise.ui.video.VideoFragment"
+        android:label="재활운동 알아보기"
+        tools:layout="@layout/fragment_video" >
+        <argument
+            android:name="body_part"
+            app:argType="com.davidjo.remedialexercise.data.BodyPart" />
+    </dialog>
+    <dialog
+        android:id="@+id/goodsFragment"
+        android:name="com.davidjo.remedialexercise.ui.initiate.goods.GoodsFragment"
+        android:label="운동 도구 알아보기"
+        tools:layout="@layout/fragment_goods">
+        <argument
+            android:name="body_part"
+            app:argType="com.davidjo.remedialexercise.data.BodyPart" />
+    </dialog>
+    <fragment
+        android:id="@+id/initiateFragment"
+        android:name="com.davidjo.remedialexercise.ui.initiate.home.InitiateFragment"
+        android:label="재활운동 계획하기"
+        tools:layout="@layout/fragment_initiate">
+        <action
+            android:id="@+id/action_initiateFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_initiateFragment_to_goodsFragment"
+            app:destination="@id/goodsFragment" />
+        <action
+            android:id="@+id/action_initiateFragment_to_planFragment"
+            app:destination="@id/planFragment" />
+        <argument
+            android:name="body_part"
+            app:argType="com.davidjo.remedialexercise.data.BodyPart" />
+    </fragment>
+    <fragment
+        android:id="@+id/planFragment"
+        android:name="com.davidjo.remedialexercise.ui.initiate.plan.PlanFragment"
+        android:label="재활운동 계획하기"
+        tools:layout="@layout/fragment_plan" >
+        <argument
+            android:name="body_part"
+            app:argType="com.davidjo.remedialexercise.data.BodyPart" />
+    </fragment>
+    <dialog
+        android:id="@+id/promptBodyPartFragment"
+        android:name="com.davidjo.remedialexercise.ui.promptbodypart.PromptBodyPartFragment"
+        android:label="fragment_prompt_body_part"
+        tools:layout="@layout/fragment_prompt_body_part" >
+        <action
+            android:id="@+id/action_promptBodyPartFragment_to_initiateFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/initiateFragment" />
+        <action
+            android:id="@+id/action_promptBodyPartFragment_to_videoFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/videoFragment" />
+        <argument
+            android:name="destination"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="com.davidjo.remedialexercise.ui.training.home.TrainingFragment"
+        android:label="재활운동하기"
+        tools:layout="@layout/fragment_training" >
+        <action
+            android:id="@+id/action_trainingFragment_to_surveyFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/surveyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/surveyFragment"
+        android:name="com.davidjo.remedialexercise.ui.training.survey.SurveyFragment"
+        android:label="설문"
+        tools:layout="@layout/fragment_survey">
+        <action
+            android:id="@+id/action_surveyFragment_to_planFragment"
+            app:popUpTo="@id/homeFragment"
+            app:destination="@id/planFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.davidjo.remedialexercise.ui.statistic.StatisticFragment"
+        android:label="통계"
+        tools:layout="@layout/fragment_statistic" />
+
+</navigation>

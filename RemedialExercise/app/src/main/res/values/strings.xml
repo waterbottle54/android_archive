@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Remedial Exercise</string>
+    <string name="submit_diagnostic_questions">진단 답변 제출하기</string>
+    <string name="do_self_diagnosis">자가진단 시작하기</string>
+    <string name="learn_rehabilitation">재활운동 알아보기</string>
+    <string name="do_rehabilitation">재활운동 실행하기</string>
+    <string name="plan_rehabilitation">재활운동 계획하기</string>
+    <string name="submit_diagnosis">자가진단 제출하기</string>
+    <string name="learn_hospitals_nearby">근처의 병원 알아보기</string>
+    <string name="would_you_start_rehab">%1s 부위에 적합한 재활운동을 알아보고 재활운동 계획을 세워보세요</string>
+
+    <string name="url_goods">https://www.coupang.com/np/search?component=&amp;q=%1s</string>
+    <string name="learn_goods">운동 도구 알아보기</string>
+    <string name="confirm_body_part">신체 부위 선택 확정하기</string>
+    <string name="please_select_body_part">재활 부위를 선택해주세요</string>
+    <string name="schedule">일정</string>
+    <string name="rule">규칙</string>
+
+    <string name="date_format">%1d-%2d-%3d</string>
+    <string name="schedule_format">%1s ~ %2s</string>
+    <string name="rule_format">매일 %1d분 씩 %2d회</string>
+    <string name="save_plan">재활운동 계획 저장하기</string>
+
+    <string name="day_plus">D%s%d</string>
+    <string name="days_left">종료까지 %1d일 남음</string>
+    <string name="you_finished_plan">%1d일 간의 일정을 마치셨습니다</string>
+    <string name="training_minutes_by">%s 운동 시간 (분)</string>
+
+</resources>
