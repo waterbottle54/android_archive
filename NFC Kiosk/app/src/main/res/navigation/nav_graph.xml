@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/signInFragment">
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.cool.nfckiosk.ui.auth.signin.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment2_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+        <action
+            android:id="@+id/action_signInFragment_to_orderFragment"
+            app:destination="@id/orderFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+        <action
+            android:id="@+id/action_signInFragment_to_statusFragment"
+            app:destination="@id/adminFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.cool.nfckiosk.ui.auth.signup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_statusFragment"
+            app:destination="@id/adminFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right"
+            app:popUpTo="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.cool.nfckiosk.ui.customer.order.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <argument android:name="tableNumber"
+            app:argType="integer" />
+        <argument
+            android:name="adminId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.cool.nfckiosk.ui.admin.admin.AdminFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_menuFragment"
+            app:destination="@id/editMenuFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_tableFragment"
+            app:destination="@id/tableFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_salesFragment"
+            app:destination="@id/salesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/editMenuFragment"
+        android:name="com.cool.nfckiosk.ui.admin.editmenu.EditMenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <dialog
+        android:id="@+id/tableFragment"
+        android:name="com.cool.nfckiosk.ui.admin.table.TableFragment"
+        android:label="fragment_table"
+        tools:layout="@layout/fragment_table" />
+    <dialog
+        android:id="@+id/salesFragment"
+        android:name="com.cool.nfckiosk.ui.admin.sales.SalesFragment"
+        android:label="fragment_sales"
+        tools:layout="@layout/fragment_sales" />
+    <dialog
+        android:id="@+id/nfcDialogFragment"
+        android:name="com.cool.nfckiosk.ui.nfc.NfcDialogFragment"
+        android:label="fragment_nfc"
+        tools:layout="@layout/fragment_nfc" >
+        <argument
+            android:name="textToWrite"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+    <action
+        android:id="@+id/action_global_nfcDialogFragment"
+        app:destination="@id/nfcDialogFragment" />
+</navigation>

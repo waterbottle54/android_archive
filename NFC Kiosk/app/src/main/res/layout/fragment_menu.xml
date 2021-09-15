@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.admin.editmenu.EditMenuFragment"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:itemCount="7"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/menu_edit_item" />
+
+    <ImageButton
+        android:id="@+id/image_button_add_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_add_black"
+        android:contentDescription="@string/add_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_text_menu_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_menu_name" />
+
+    <EditText
+        android:id="@+id/edit_text_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/menu_name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edit_text_menu_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:drawableStart="@drawable/ic_price"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/price"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_text_menu_name"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_menu_name"
+        app:layout_constraintTop_toTopOf="@+id/edit_text_menu_name"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_menu"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

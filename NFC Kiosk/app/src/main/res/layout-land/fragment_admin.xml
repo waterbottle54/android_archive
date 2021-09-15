@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stormcloud"
+    tools:context=".ui.admin.admin.AdminFragment"
+    tools:visibility="visible">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_table"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_edit_tables"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
+        tools:listitem="@layout/table_item" />
+
+    <Button
+        android:id="@+id/button_edit_tables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/table_management"
+        app:layout_constraintBottom_toTopOf="@+id/button_show_sales"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/button_show_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sales_management"
+        app:layout_constraintBottom_toTopOf="@+id/button_edit_menu"
+        app:layout_constraintEnd_toEndOf="@+id/button_edit_tables"
+        app:layout_constraintTop_toBottomOf="@+id/button_edit_tables" />
+
+    <Button
+        android:id="@+id/button_edit_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_management"
+        app:layout_constraintBottom_toTopOf="@+id/button_complete_payment"
+        app:layout_constraintEnd_toEndOf="@+id/button_show_sales"
+        app:layout_constraintTop_toBottomOf="@+id/button_show_sales" />
+
+    <Button
+        android:id="@+id/button_complete_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/complete_payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_edit_menu"
+        app:layout_constraintTop_toBottomOf="@+id/button_edit_menu" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_table"
+        android:name="com.cool.nfckiosk.ui.admin.table.TableFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_table"
+        app:layout_constraintEnd_toStartOf="@+id/button_edit_tables"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
