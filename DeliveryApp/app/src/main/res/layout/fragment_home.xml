@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <!-- 한식 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewKoreanFood"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/korean_food"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/korean_food" />
+
+                    <TextView
+                        android:id="@+id/txtKoreanFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/korean_food"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 한식 -->
+
+            <!-- 양식 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewWesternFood"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/western_food"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/western_food" />
+
+                    <TextView
+                        android:id="@+id/txtWesternFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/western_food"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 양식 -->
+
+            <!-- 치킨 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewChicken"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/chicken"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chicken" />
+
+                    <TextView
+                        android:id="@+id/txtChicken"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/chicken"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 치킨 -->
+
+            <!-- 일식 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewJapaneseFood"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/japanese_food"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/japanese_food" />
+
+                    <TextView
+                        android:id="@+id/txtJapaneseFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/japanese_food"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 일식 -->
+
+            <!-- 중식 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewChineseFood"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/chinese_food"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/chinese_food" />
+
+                    <TextView
+                        android:id="@+id/txtChineseFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/chinese_food"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 중식 -->
+
+            <!-- 분식 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewFlourFood"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/flour_food"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/flour_food" />
+
+                    <TextView
+                        android:id="@+id/txtFlourFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/flour_food"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 분식 -->
+
+            <!-- 간식 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewSnack"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:elevation="10dp"
+                android:scaleX="0.95"
+                android:scaleY="0.95"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:contentDescription="@string/snack"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/snack" />
+
+                    <TextView
+                        android:id="@+id/txtSnack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorCategory"
+                        android:fontFamily="@font/songmyeong"
+                        android:gravity="end|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/snack"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <!-- 끝 : 간식 -->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLocal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressRecyclerLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:visibility="invisible"
+        android:id="@+id/map"
+        android:name="com.naver.maps.map.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>

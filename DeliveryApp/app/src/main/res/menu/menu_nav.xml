@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/itemMy"
+        android:icon="@drawable/ic_my"
+        android:title="@string/my" />
+
+    <item
+        android:id="@+id/itemCorona"
+        android:icon="@drawable/ic_virus"
+        android:title="@string/virus_info" />
+
+</menu>
