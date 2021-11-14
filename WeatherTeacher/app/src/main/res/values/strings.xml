@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeatherTeacher</string>
+    <string name="temperature_format">%.1f℃</string>
+    <string name="humidity_format">%d%%</string>
+    <string name="precipitation_format">%.1fmm</string>
+    <string name="wind_direction_velocity_format">%s | %.1fm/s</string>
+    <string name="ldt_format">%d월 %d일 %s %d:%02d 기준</string>
+</resources>
