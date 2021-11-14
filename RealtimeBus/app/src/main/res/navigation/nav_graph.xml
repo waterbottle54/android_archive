@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/stationsFragment">
+
+    <fragment
+        android:id="@+id/stationsFragment"
+        android:name="com.cool.realtimebus.ui.stations.StationsFragment"
+        android:label="fragment_stations"
+        tools:layout="@layout/fragment_stations" >
+        <action
+            android:id="@+id/action_stationsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/detailFragment"
+        android:name="com.cool.realtimebus.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="station"
+            app:argType="com.cool.realtimebus.data.station.Station" />
+    </dialog>
+</navigation>

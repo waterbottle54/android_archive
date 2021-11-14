@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Realtime Bus</string>
+    <string name="no_arrival">도착 예정인 버스가 없습니다</string>
+</resources>
