@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HtmlMaster</string>
+    <string name="url">URL</string>
+    <string name="no_html_found">문서를 불러오지 못했습니다</string>
+</resources>

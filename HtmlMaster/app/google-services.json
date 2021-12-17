@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "800768725618",
+    "firebase_url": "https://toeic-percent.firebaseio.com",
+    "project_id": "toeic-percent",
+    "storage_bucket": "toeic-percent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800768725618:android:ff9d6ba500056e1e98a8eb",
+        "android_client_info": {
+          "package_name": "com.davidjo.toeic_percent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI9PYXDFRW9zdDCX4sA0LSOp_JhuSSmbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800768725618:android:ac62b593e78122b598a8eb",
+        "android_client_info": {
+          "package_name": "com.holy.textrecognition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI9PYXDFRW9zdDCX4sA0LSOp_JhuSSmbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800768725618:android:3bdef641b53fccd198a8eb",
+        "android_client_info": {
+          "package_name": "com.holy.toeicresultsreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI9PYXDFRW9zdDCX4sA0LSOp_JhuSSmbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800768725618:android:9c79125369fa2e8a98a8eb",
+        "android_client_info": {
+          "package_name": "com.penelope.htmlmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI9PYXDFRW9zdDCX4sA0LSOp_JhuSSmbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800768725618-oh9h3ggsentqno2tvrjqavn8oafi6v2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
