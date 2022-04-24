@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">마법의 소라고동</string>
+    <string name="title">마법의\n소라고동</string>
+    <string name="start">시작</string>
+    <string name="press_question_button">소라고동에게\n물어볼 것을\n생각한 뒤,\n대답 버튼을\n눌러주세요</string>
+    <string name="question">대답듣기</string>
+    <string name="exit">나가기</string>
+    <string name="question_again">다른 질문하기</string>
+</resources>
